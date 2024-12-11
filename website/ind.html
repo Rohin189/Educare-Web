@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <body>
+  <header>
+    <h1>Educare</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="initiatives.html">Initiatives</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Login Dropdown Button -->
+    <div class="dropdown">
+      <button class="btn login-main-btn">Login</button>
+      <div class="dropdown-content">
+        <a href="login/student-login.html">Student Login</a>
+        <a href="login/teacher-login.html">Teacher Login</a>
+        <a href="login/parent-login.html">Parent Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h2>Welcome to Educare</h2>
+      <p>Your partner in building a brighter future for all.</p>
+      <a href="initiatives.html" class="cta-button">Explore Initiatives</a>
+    </section>
+
+    <!-- Feature Sections -->
+    <section class="feature-section">
+      <div class="feature">
+        <img src="images/education.png" alt="Education Icon">
+        <h3>Educational Resources</h3>
+        <p>Find study materials, guides, and tools to help you succeed.</p>
+      </div>
+      <div class="feature">
+        <img src="images/community.png" alt="Community Icon">
+        <h3>Get Involved</h3>
+        <p>Join us in making a difference in education.</p>
+      </div>
+      <div class="feature">
+        <img src="images/teacher.png" alt="Teacher Icon">
+        <h3>Teacher Training</h3>
+        <p>Access training programs and resources for educators.</p>
+      </div>
+    </section>
+    <section class="success-stories">
+      <h2>Success Stories</h2>
+      <p>Check out some of the amazing stories of students and communities who have benefited from our initiatives.</p>
+      <div class="story-cards">
+        <div class="story-card">
+          <h4>Shradha Sharma</h4>
+          <img src="images/story1.jpg" alt="story1">
+          <p>Learn how we helped a student graduate from high school against all odds.</p>
+          <button onclick="window.location.href='story1.html'" class="btn-secondary">Read Story</button>
+        </div>
+        <div class="story-card">
+          <h4>Success Story 2</h4>
+          <p>How a community initiative is improving access to education for local children.</p>
+          <button onclick="window.location.href='story2.html'" class="btn-secondary">Read Story</button>
+        </div>
+        <div class="story-card">
+          <h4>Success Story 3</h4>
+          <p>A teacher's perspective on how partnerships have brought about change.</p>
+          <button onclick="window.location.href='story3.html'" class="btn-secondary">Read Story</button>
+        </div>
+      </div>
+    </section>
+  
+  <section class="additional-stories">
+    <h2>Our Latest Impact</h2>
+    <div class="story-container">
+      <img src="images/piechart.jpg" alt="Impact Image" class="story-image">
+      <div class="story-text">
+        <h3></h3>
+        <p>According to a story in the Atlantic, college dropouts over the age of 25 are 71 percent more likely to be unemployed, and are 4 times more likely to default on their student loans. On average, they earn 32 percent less than their contemporaries with college&nbsp;degrees.</p>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What People Say About Us</h2>
+      <div class="testimonial">
+        "Educare has truly transformed my learning experience. I’ve gained access to great study resources."
+        <span>- Md Shere Habib, Student</span>
+      </div>
+      <div class="testimonial">
+        "The teacher training programs provided by Educare have helped me become a better educator."
+        <span>- Shivanshu Pauskar, Teacher</span>
+      </div>
+
+  </section></main>
+
+  <footer>
+    <p>© 2024 Educare. Empowering Education for All.</p>
+  </footer>
+
+<script>
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBS6CFvKXtk5HAz4nYv31L9_6yqIWhmlF8",
+    authDomain: "educare-746e7.firebaseapp.com",
+    databaseURL: "https://educare-746e7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "educare-746e7",
+    storageBucket: "educare-746e7.firebasestorage.app",
+    messagingSenderId: "482155083551",
+    appId: "1:482155083551:web:0564b96c5486038029e22a",
+    measurementId: "G-RCXWGFPQVG"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  console.log("Hi");
+  const analytics = getAnalytics(app);
+</script>
+
+
+
+</body>
+</body>
+</html>
